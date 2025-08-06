@@ -58,10 +58,12 @@ contract MtkContracts {
         require(amount>0,"amount must be greater than zero");
         require(stakingToken.transferFrom(msg.sender, address(this), amount), "Transfer failed");
 
-        uint256 duration=durations[period];
-        uint256 rate=apy[period];
+        uint256 duration=_getDuration(period);//获取分钟
+        uint256 periodDays=durations[period];
+        uint256 rate=apy[period]*periodDays*1**18/360;
         uint256 start = block.timestamp;//区块开始时间
         uint256 end = start + duration;//结束时间
+        
         Stake memory newStake = Stake({
             stakeIndex: userStakes[msg.sender].length,
             amount: amount,
@@ -73,7 +75,7 @@ contract MtkContracts {
 
         userStakes[msg.sender].push(newStake);
         //触发事件
-        emit Staked(msg.sender, amount, period, start);
+        emit Staked(msg.sender, amount, period, end);
     }
 
     // 内部函数：根据期限返回秒数
@@ -97,8 +99,8 @@ contract MtkContracts {
         //质押时间没有到
         require(block.timestamp >= stk.endTime, "Staking period is not over");
         stk.isActive=false;
-        uint256 duration=stk.endTime - stk.startTime;
-        uint256 reward = stk.amount * stk.rewardRate * duration / (365 days * 100);
+        
+        uint256 reward = stk.amount * stk.rewardRate  / 100/10**18;
         uint256 totalAmount = stk.amount + reward;
         // 将质押的代币和收益转移给用户
         stakingToken.transfer(msg.sender, totalAmount);
