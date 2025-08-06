@@ -1,0 +1,98 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "size",
+						"type": "uint8"
+					}
+				],
+				"name": "testMemoryDynaicArra",
+				"outputs": [
+					{
+						"internalType": "uint8[]",
+						"name": "",
+						"type": "uint8[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testReadDynamicsStorageArry",
+				"outputs": [
+					{
+						"internalType": "uint8[]",
+						"name": "",
+						"type": "uint8[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testStaticArry",
+				"outputs": [
+					{
+						"internalType": "uint8[3]",
+						"name": "",
+						"type": "uint8[3]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testWriteDynamicsStorageArry",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"demo/day04.sol": "ArryType"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"demo/day04.sol": {
+			"keccak256": "0x2e74a26dbbcb1cd16654fee01f033ea3ed3e5d6bbb06d67761ad31ef9fb2eb7b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c25a20ab9babb58f72a4dc0529d32789109fad37887d9448aa7a509d6e26a716",
+				"dweb:/ipfs/QmSEfASSZKhhySZw1EXnNhL3oUUBkbHk5z7KXwJhzoM3LD"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"demo/day06.sol": "BalanceM"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"demo/day06.sol": {
+			"keccak256": "0x50fb1fbd74c243120f1cf3dc429abcd6d8570eb56b2d676af50e3495969cf010",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d111c399e46eaa2b4fde1591234b8e4c08f3703ded3c1288fdbf4726469c59eb",
+				"dweb:/ipfs/QmRauSmuGTLGgtSDU92pMyf4v4tFkEvoXHjyhiZf2aX77P"
+			]
+		}
+	},
+	"version": 1
+}

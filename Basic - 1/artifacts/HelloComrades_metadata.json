@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getBalance()": {
+					"details": "一个当前合约的辅助函数",
+					"returns": {
+						"_0": "当前合约余额"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getBalance()": {
+					"notice": "用来取当前合约余额"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"demo/day02.sol": "HelloComrades"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"demo/day02.sol": {
+			"keccak256": "0x42bae51d855c71e86920f07b22b70317c563a38c0fc32f81f02835e08f728477",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7a9ecb84cb2b8ad16fcdd17ab432a98502bab897d1c05acd188bf869bad28143",
+				"dweb:/ipfs/QmWVHpF7cHkgLQ4gzuS8Mvwpthy82ZC8Y3T6TDfB9WEg3e"
+			]
+		}
+	},
+	"version": 1
+}
