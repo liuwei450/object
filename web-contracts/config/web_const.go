@@ -10,7 +10,13 @@ const (
 	CONTRACT_ADRESS = "0x81C0C4d1a073A77Eb3f6C4a81c4aC04dbf35E8dC"
 	ERC20_ADDRESS   = "0x代币合约地址" // 你的 MTK ERC20 地址
 	CHAIN_ID        = 97         // BSC 测试网
-	MYSQL_DSN       = "root:password@tcp(127.0.0.1:3306)/staking?charset=utf8mb4&parseTime=True&loc=Local"
+	MaxIdleConns    = 10
+	MaxOpenConns    = 100
+	MYSQL_USER      = "root"
+	MYSQL_PASSWORD  = "123456"
+	MYSQL_DATABASE  = "user_db"
+	MYSQL_URL       = "127.0.0.1:3306"
+	MYSQL_CONFIG    = "charset=utf8&parseTime=True&loc=Local"
 	ABI_JSON        = `[
 			{
 				"inputs": [
